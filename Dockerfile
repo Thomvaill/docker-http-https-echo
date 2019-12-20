@@ -12,8 +12,6 @@ RUN apk --no-cache add openssl
 
 RUN sh generate-cert.sh
 
-EXPOSE 80 443
-
 
 ENTRYPOINT ["node", "./index.js"]
 CMD []

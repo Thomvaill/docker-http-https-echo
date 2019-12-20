@@ -4,7 +4,7 @@ Docker image which echoes various HTTP request properties back to client, as wel
 
 ## Usage
 
-    docker run -p 8080:80 -p 8443:443 --rm -t mendhak/http-https-echo
+    docker run -p 8080:8080 -e HTTP_PORT=8080 -p 8443:8443 -e HTTPS_PORT=8443 --rm -t mendhak/http-https-echo
 
 Then issue a request via your browser or curl -
 
